@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="p-3 fixed-top">
+        <div class="d-flex align-items-center justify-content-between container">
+            <i class="fas fa-bars"></i>
+            <img src="./images/logo.svg" alt="">
+            <div class="cart-btn position-relative">
+
+                <i class="fas fa-cart-plus"></i>
+                <span class="cart-items text-white position-absolute text-center">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="home d-flex align-items-center justify-content-center">
+        <div class="banner bg-light text-center text-uppercase">
+            <h1 class="banner-title mb-5">
+                furniture collection
+            </h1>
+            <button class="btn btn-primary btn-banner btn-color text-uppercase text-dark">shop now</button>
+        </div>
+    </header>
+    <section class="products py-5">
+        <div class="container text-center">
+            <h2 class="title my-5">Our Products
+            </h2>
+            <div class="row">
+            </div>
+        </div>
+    </section>
+<div class="cart-layout ">
+<div class="cart  h-100">
+    <span class="close-cart">
+        <i class="fas fa-window-close"></i>
+    </span>
+    <h2 class="text-capitalize text-center  ">your cart</h2>   
+    <div class="container">
+       <div class="cart-wrapper text-center">
+   
+                            
+       </div>
+        <div class="cart-footer text-center my-3">
+            <h4 class="text-capitalize">your total : $ <span class="cart-total">0</span> </h4>
+            <button class="clear-cart mt-2 btn btn-primary btn-color btn-banner text-uppercase text-dark">clear cart</button>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+    <script  src="js/main.js"></script>
+</body>
+
+</html>

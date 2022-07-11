@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background: rgb(231, 226, 221);
+    z-index: 1 !important;
+}
+
+nav i{
+    font-size:1.5rem
+}
+
+
+.cart-items
+{
+    bottom: 14px;
+    left: 18px;
+    background: #f09d51;
+    padding: 0 5px;
+    border-radius: 30%;
+}
+.home
+{
+    height: 100vh;
+    background-image: url(../images/hero-bcg.jpeg) ;
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.banner
+{
+    padding:2rem;
+}
+.btn-color {
+    background: #f09d51 !important;
+    border-color:  #f09d51 !important;
+}
+.btn-banner
+{
+   
+    letter-spacing:0.25rem;
+   padding: 1rem 3rem;
+
+}
+
+.products h2
+{
+    font-size: 2.5rem;
+}
+.product
+{
+    overflow:hidden;
+}
+.product-img{
+    width: 100%;
+    min-height: 12rem;
+    transition: opacity 0.4s ease-in-out;
+}
+
+  .bag-btn{
+    top: 70%;
+    right: 0;
+    transition: transform 0.4s ease-in-out , color 0.4s ease-in-out;
+    transform:translateX(101%);
+
+  }
+  .product:hover .product-img {
+    opacity: 0.5;
+  }  .product:hover .bag-btn {
+    transform: translateX(0);
+  }
+  .bag-btn:hover
+  {
+    color: #fff;
+
+  }
+  .price
+  {
+    color: #f09d51;
+  }
+  .cart-layout
+  {
+    position:fixed;
+    width:100%;
+    height:100%;
+    top: 0;
+    right: 0;
+    background: rgb(240, 157, 81, 0.5);
+    z-index: 2;
+    visibility: hidden;
+    transition: visibility 0.4s ease-in-out;
+
+  }
+  .cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    background: rgb(231, 226, 221);
+    padding: 1.5rem;
+    overflow: auto;
+    z-index: 3;
+transition: transform 0.4s ease-in-out;
+transform: translateX(100%);
+}
+    .close-cart 
+    {
+        font-size:2rem;
+    }
+    .cart-item img {
+        width: 75px;
+        object-fit: cover;
+    }
+    .cart-item i {
+color: #f09d51;
+font-size: 1.1rem;
+    }
+   .remove-item,.cart-item i,.cart-btn, .close-cart 
+   {
+    cursor: pointer;
+
+   }
+   .show-cart {
+    transform: translateX(0);
+  }
+  .transparent-bcg {
+    visibility: visible;
+  }
+@media screen and (max-width :575.98px)
+{
+  .cart{
+    width: 100%;
+  }
+
+}
+@media screen and (min-width :576px) and (max-width :767.98px)
+{
+.cart{
+  width: 50%;
+}
+
+}
+
+@media screen and (min-width :768px) and (max-width :1199.98px)
+{
+  .cart{
+    width: 35%;
+  }
+  
+}
+@media screen and (min-width :1200px) and (max-width :1399.98px)
+{
+  .cart{
+    width: 30%;
+  }
+}
